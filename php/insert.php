@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // verifica se a inserção foi bem-sucedida
     if ($inserir) {
         // Redireciona para a página de login após o cadastro
-        header("Location: ./login.html");
+        header("Location: ../login.html");
         exit();
     } else {
         echo "Erro ao cadastrar aluno: " . mysqli_error($connection);
